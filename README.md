@@ -9,8 +9,8 @@ TBFL(The Best Friendly Language) is a simple language designed for operations on
 <br />Also it provides user to write comments on code, define functions, use for-loop and if-else statement and some other features:
 <br />&nbsp;&nbsp;&nbsp;&nbsp;	/** for-loop **\
 <br />&nbsp;&nbsp;&nbsp;&nbsp;	for ( num @n = 0; @n << 10; @n ++) do
-<br />		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/** if statement **\
-<br />		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if( @X->size << 10) do
-<br />		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	@X < @n;
-<br />		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/** if statement **\
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if( @X->size << 10) do
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	@X < @n;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end
 <br />&nbsp;&nbsp;&nbsp;&nbsp;end
