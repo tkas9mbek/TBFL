@@ -1,0 +1,62 @@
+do
+	/**calculator for sets**\
+
+	char @repeat = 'Y';
+
+	for( ; @repeat == 'Y'; ) do
+		tbout => "Enter the first set as {num or char, ...}";
+		set @A;
+		@A =< tbin;
+		tbout => "Enter an operation (< for union, > for intersection, - for difference, * for cross product)";
+		char @op;
+		@op =< tbin;
+		tbout => "Enter the second set as {num or char, ...}";
+		set @B;
+		@Y =< tbin;
+
+		set @C;
+
+		if @op == '<' do
+			@C = @A < @B;
+		end
+		if @op == '>' do
+			@C = @A > @B;
+		end
+		if @op == '-' do
+			@C = @A - @B;
+		end
+		if @op == '*' do
+			@C = @A * @B;
+		end
+
+		tbout => "The result of " => @A => @op => @B => " is " => @C;
+
+		tbout => "Do you want to use calculator? Enter Y or N"
+		@repeat =< tbin;
+
+	end
+
+	/** Simple operations on sets and other data types **\
+	set @X;
+	@X = { 1, 5, 6};
+	set @Y;
+	@Y = @X - { 2, 5, 6};   	 	/** @Y = { 1 } **\
+	set @Z;
+	@Z = { 1, 5, 6};
+	@Z -= { 2, 5, 6}; 			/** @Y = { 1 } **\
+
+	if @Z == @Y do
+		@Z <= { 2, 3};
+	end
+
+	set @PowerSet =  %@Z;		/** @Z = { 1, 2, 3 } **\		
+
+	/** @PowerSet = { {1, 2, 3}, {1, 2}, {1, 3}, {2, 3}, {1}, {2}, {3}, {}  } **\
+
+	num @powSetSize;
+	@powSetSize = @PowerSet -> size;
+	@PowerSet <= { @X, @Y};
+	@powSetSize += 2;
+	/** {1, 5, 6} and {1} added to @PowerSet **\
+
+end
